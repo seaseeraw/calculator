@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="calculator">
+  <input type ="text" id="display" >
+    <div class="button">
+      <div class="btn" onclick="enterValue('1')">1</div>
+      <div class="btn" onclick="enterValue('2')">2</div>
+      <div class="btn" onclick="enterValue('3')">3</div>
+      <div class="btn" onclick="enterValue('+')">+</div>
+      <div class="btn" onclick="enterValue('4')">4</div>
+      <div class="btn" onclick="enterValue('5')">5</div>
+      <div class="btn" onclick="enterValue('6')">6</div>
+      <div class="btn" onclick="enterValue('-')">-</div>
+      <div class="btn" onclick="enterValue('7')">7</div>
+      <div class="btn" onclick="enterValue('8')">8</div>
+      <div class="btn" onclick="enterValue('9')">9</div>
+      <div class="btn" onclick="enterValue('*')">*</div>
+      <div class="btn" onclick="clearValue()">DEL</div>
+      <div class="btn"onclick="enterValue('0')">0</div>
+      <div class="btn" onclick="enterValue('%')">%</div>
+      <div class="btn"onclick="output()">=</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
