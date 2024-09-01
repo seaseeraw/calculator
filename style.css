@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif, Helvetica, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    background-color: black;
+    min-height: 500px;
+    width: 360px;
+    border-radius: 50px;
+    overflow: hidden;
+
+    .display {
+        background-color: black;
+        height: auto;
+        min-height: 150px;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        font-weight: 100;
+        color: white;
+        flex-direction: column;
+        padding-right: 40px;
+
+        .top-display {
+            font-size: 30px;
+            min-height: 40px;
+        }
+        .bottom-display {
+            font-size: 60px;
+            width: auto;
+            min-height: 60px;
+        }
+    }
+
+    .numberpad {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(5, 80px);
+        color: white;
+        align-items: center;
+        justify-items: center;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        gap: 5px;
+
+        div {
+            width: 100%;
+            height: 80px;
+            border-radius: 80px;
+            background-color: rgb(46, 46, 46);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        div.orange {
+            background-color: rgb(0, 174, 255);
+        }
+
+        div.grey {
+            background-color: grey;
+        }
+
+        div.span2 {
+            grid-column: span 2;
+        }
+        div:hover {
+            background-color: rgb(255, 86, 86);
+        }
+    }
+}
